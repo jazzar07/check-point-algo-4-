@@ -1,0 +1,13 @@
+Procedure tri-selection(var tab:array_of_integer) ; 
+var i,j,a :integer
+BEGIN
+FOR i from 1 to ((tab.length)-1 ) do
+ a:=Tab[i]
+ j:= i 
+   while (j>0 )&& (Tab[j-1] > a) 
+     Tab[j]:=Tab[j-1]
+     j:=j-1
+   END
+  Tab[j]:=a
+END_FOR
+END.
